@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="info_holder container">
+      <form onsubmit="event.preventDefault(); add()">
+        <div class="adding_items">
+        <button type="button" class="btn btn-dark">Sort By</button>
+        
+        <input type="text"  id="add_info" required/>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </div>
+        <div class="container" id="list">
+        <!-- <ul>
+        </ul> -->
+      </div>
+  </div>
+    <!-- Search function -->
+    <!-- <br />
+      <div class="search_feature">
+        <input type="text" id="Input" /><button onclick="Search()">Search</button>
+      </div> -->
+      
+    <script src="./index.js"></script>
+  </body>
+</html>
