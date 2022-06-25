@@ -4,12 +4,31 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: 	#f5f5dc;
+}
+
 /* container holding items */
 .info_holder {
   margin: 20px 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.info_holder.container {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 20px;
+  box-shadow: 5px 3px 4px 2px rgb(0 0 0 / 20%);
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-style: italic;
 }
 
 /* form {
@@ -50,6 +69,7 @@ li {
   border: 1px solid black;
   padding: 10px;
   width: 50%;
+  background-color: #deb887;
 }
 
 .checkboxes {
@@ -63,3 +83,14 @@ input#add_info {
 input:checked + label {
   text-decoration: line-through;
 }
+
+div#listing {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+i:hover {
+  color: #f5f5dc;
+}
+
